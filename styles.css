@@ -6,13 +6,13 @@
 }
 
 @font-face {
-    font-family: "Ubuntu-Regular";
-    src: url(./assets/Ubuntu-Medium.ttf);
+    font-family: "Montserrat-Regular";
+    src: url(./assets/Montserrat-Regular.ttf);
 }
 
 @font-face {
-    font-family: "Ubuntu-Bold";
-    src: url(./assets/Ubuntu-Bold.ttf);
+    font-family: "Montserrat-Bold";
+    src: url(./assets/Montserrat-Bold.ttf);
 }
 
 nav {
@@ -21,7 +21,7 @@ nav {
     align-items: center;
     min-height: 8vh;
 
-    background-color: #32502E;
+    background-color: #4AA96C;
 
 }
 
@@ -30,14 +30,14 @@ nav {
 .logo {
     color: aliceblue;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1.2px;
     font-size: 1.3rem;
-    font-family: "Ubuntu-Bold";
+    font-family: "Montserrat-Bold";
 
 }
 
 .logo:hover {
-    color: #6ECB63;
+    color: #1f291d;
 }
 
 .nav-links {
@@ -48,7 +48,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #C6D57E
+    color: #1f291d;
 }
 
 .nav-links li {
@@ -58,10 +58,10 @@ nav {
 .nav-links a {
     color: aliceblue;
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: 1.2px;
     font-weight: bold;
     font-size: 0.95rem;
-    font-family: "Ubuntu-Regular";
+    font-family: "Montserrat-Regular";
 }
 
 .burger {
@@ -93,7 +93,7 @@ nav {
 }
 
 .text-div {
-    font-family: "Ubuntu-Bold";
+    font-family: "Montserrat-Bold";
     text-align: center;
     margin: 5% 20%;
     letter-spacing: 0.5px;
@@ -117,6 +117,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 
 }
 
@@ -141,17 +142,35 @@ nav {
 }
 
 .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236ECB63' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23161616' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
 .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236ECB63' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23161616' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 
 .col {
     margin-top: 10px;
     margin-bottom: 50px;
+}
+
+
+.info{
+    text-align: center;
+    padding-top: 10%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 10%;
+    font-weight: 900;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.979), rgb(109, 146, 123));
+   
+}
+
+
+
+.album{
+    background-image: linear-gradient(to top, rgba(26, 8, 8, 0.877), rgb(109, 146, 123));
 }
 
 @media screen and (max-width:1024px) {
