@@ -1,0 +1,241 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: "Ubuntu-Regular";
+    src: url(./assets/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Ubuntu-Bold";
+    src: url(./assets/Ubuntu-Bold.ttf);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+
+    background-color: #32502E;
+
+}
+
+
+
+.logo {
+    color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    font-family: "Ubuntu-Bold";
+
+}
+
+.logo:hover {
+    color: #6ECB63;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    padding-top: 10px;
+}
+
+.nav-links a:hover {
+    color: #C6D57E
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: aliceblue;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    font-family: "Ubuntu-Regular";
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: aliceblue;
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+
+.middleSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.text-div {
+    font-family: "Ubuntu-Bold";
+    text-align: center;
+    margin: 5% 20%;
+    letter-spacing: 0.5px;
+
+}
+
+.text-div h1 {
+    font-size: 2.5rem;
+}
+
+.text-div h2 {
+    font-size: 1.8rem;
+}
+
+.green {
+    width: 20%;
+
+}
+
+#collectionSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+.carousel-item {
+    margin: 3% 22%;
+}
+
+.sliderImages {
+    width: 50%;
+
+    margin: 20px;
+}
+
+.carousel-item {
+    transition: transform 1.5s ease-in-out;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+    transition: opacity 0s 1.5s;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236ECB63' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236ECB63' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+
+.col {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .text-div {
+        margin-right: 55%;
+    }
+
+    .text-div h1 {
+        font-size: 1em;
+    }
+
+    .text-div h2 {
+        font-size: 0.8rem;
+    }
+
+    #collectionSection {
+        width: 60%;
+    }
+
+    .green {
+        margin-right: 35%;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #32502E;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
