@@ -6,6 +6,16 @@
 }
 
 @font-face {
+    font-family: "Amati-Bold";
+    src: url(./assets/AmaticSC-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Amati-Regular";
+    src: url(./assets/AmaticSC-Regular.ttf);
+}
+
+@font-face {
     font-family: "Montserrat-Regular";
     src: url(./assets/Montserrat-Regular.ttf);
 }
@@ -15,29 +25,33 @@
     src: url(./assets/Montserrat-Bold.ttf);
 }
 
+@font-face {
+    font-family: "Caveat";
+    src: url(./assets/Caveat-Medium.ttf);
+}
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
 
-    background-color: #4AA96C;
+    background-color: #346751;
 
 }
 
 
 
-.logo {
+.logo h4 {
+    font-size: 2.5rem;
     color: aliceblue;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    font-size: 1.3rem;
-    font-family: "Montserrat-Bold";
-
+    font-family: "Amati-Bold";
 }
 
-.logo:hover {
-    color: #1f291d;
+.logo h4:hover {
+    color: #C84B31;
 }
 
 .nav-links {
@@ -48,11 +62,12 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #1f291d;
+    color: #C84B31;
 }
 
 .nav-links li {
     list-style: none;
+    font-size: 1.3rem;
 }
 
 .nav-links a {
@@ -60,8 +75,8 @@ nav {
     text-decoration: none;
     letter-spacing: 1.2px;
     font-weight: bold;
-    font-size: 0.95rem;
-    font-family: "Montserrat-Regular";
+
+    font-family: "Amati-Regular";
 }
 
 .burger {
@@ -101,11 +116,15 @@ nav {
 }
 
 .text-div h1 {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
+    font-family: "Amati-Bold";
+    
 }
 
 .text-div h2 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+    font-family: "Amati-Regular";
+    padding-top: 25px;
 }
 
 .green {
@@ -113,11 +132,20 @@ nav {
 
 }
 
+.accessories h1{
+    font-family: "Amati-Bold";
+    font-size: 3.5rem;
+}
+
+.accessories p{
+    padding-top: 35px;
+}
+
 #collectionSection {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+
 
 }
 
@@ -156,7 +184,7 @@ nav {
 }
 
 
-.info{
+.info {
     text-align: center;
     padding-top: 10%;
     margin-left: 0;
@@ -164,13 +192,33 @@ nav {
     padding-bottom: 10%;
     font-weight: 900;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.979), rgb(109, 146, 123));
-   
+
 }
 
 
 
-.album{
+.album {
     background-image: linear-gradient(to top, rgba(26, 8, 8, 0.877), rgb(109, 146, 123));
+}
+
+#pricing-section {
+    background-image: linear-gradient(to bottom, rgba(26, 8, 8, 0.877), rgb(206, 214, 209));
+
+}
+
+.slogan {
+    display: flex;
+    flex-direction: row;
+    font-family: "Caveat";
+    font-size: 1.7rem;
+}
+
+.slogan p:first-child {
+    padding-right: 140px;
+}
+
+.pricings {
+    padding: 5% 15%;
 }
 
 @media screen and (max-width:1024px) {
